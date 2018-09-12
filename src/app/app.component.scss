@@ -9,6 +9,7 @@
     border: 1px solid #ccc;
     border-bottom: 0;
     box-shadow: 3px 1px 4px 0px #828282;
+    min-height: calc(100vh - 1px);
   }
   app-main-content {
     flex-grow: 1;

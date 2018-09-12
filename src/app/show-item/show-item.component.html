@@ -1,0 +1,29 @@
+<div class="selector">
+  <nav>
+    <ul class="selector-ul">
+      <li class="active" (click)="getAll()">All</li>
+      <li (click)="filter('male')">Male</li>
+      <li (click)="filter('female')">Female</li>
+    </ul>
+  </nav>
+</div>
+<hr>
+<div class="container">
+  <div class="row">
+    <div class="col-10 mb-4">
+      <input type="text" class="form-control" #text>
+    </div>
+    <div class="col-2">
+      <button (click)="search(text)" class="btn">Search</button>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3 one-item" *ngFor="let item of currItems">
+      <figure>
+        <img [src]="item.image" [alt]="item.name" [title]="item.name" class="img-fluid">
+        <div class="add-cart">
+          add to cart
+        </div>
+      </figure>
+      <p>{{item.name}} - {{item.price}}</p>
+    </div>
+  </div>
+</div>
