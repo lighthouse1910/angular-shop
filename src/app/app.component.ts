@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angularShop';
+  sidenav = true;
+  toggle_sidenav() {
+    this.sidenav = !this.sidenav;
+  }
+  constructor() {}
 }
