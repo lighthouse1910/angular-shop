@@ -6,8 +6,10 @@ import { MainContentComponent } from './main-content/main-content.component';
 import { FormaddComponent } from './formadd/formadd.component';
 import { RouterModule, Routes } from '@angular/router';
 import { ShowItemComponent } from './show-item/show-item.component';
-import { ReactiveFormsModule } from '@angular/forms';
-
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { CartComponent } from './cart/cart.component';
+import { HttpClientModule } from '@angular/common/http';
+import { TestService } from './app.service';
 const appRoutes: Routes = [
   {
     path: '',
@@ -16,6 +18,10 @@ const appRoutes: Routes = [
   {
     path: 'form',
     component: FormaddComponent
+  },
+  {
+    path: 'cart',
+    component: CartComponent
   }
 ];
 @NgModule({
@@ -24,11 +30,14 @@ const appRoutes: Routes = [
     SidenavComponent,
     MainContentComponent,
     FormaddComponent,
-    ShowItemComponent
+    ShowItemComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     ReactiveFormsModule,
+    FormsModule,
     RouterModule.forRoot(
       appRoutes,
       { enableTracing: true } // <-- debugging purposes only

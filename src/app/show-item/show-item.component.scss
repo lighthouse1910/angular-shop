@@ -16,10 +16,12 @@
   }
 }
 .one-item {
+  margin-top: 10px;
   figure {
     box-shadow: 1px 0 2px 2px #ccc;
     position: relative;
     overflow: hidden;
+    transition: 0.3s ease-out;
     &:hover {
       transform: translateY(-10px);
       transition: 0.2s;
