@@ -8,11 +8,19 @@ import { IClothes } from '../app.model';
   styleUrls: ['./cart.component.scss']
 })
 export class CartComponent implements OnInit {
-  items: IClothes[] = [];
-
+  items: IClothes[];
+  total;
   constructor(private cartSvc: CartSvService) {}
 
   ngOnInit() {
-    this.cartSvc.arrItem = this.items;
+    this.items = this.cartSvc.arrayItems;
+    this.totalPrice();
+  }
+  totalPrice() {
+    const priceArr = this.items.map(x => x.price);
+    this.total = priceArr.reduce(function(sum, num) {
+      return sum + num;
+    }, 0);
+    return this.total;
   }
 }

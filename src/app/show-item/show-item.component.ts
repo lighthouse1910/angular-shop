@@ -17,17 +17,12 @@ import { CartSvService } from '../cart-sv.service';
   styleUrls: ['./show-item.component.scss']
 })
 export class ShowItemComponent implements OnInit {
-  // items: Item[] = [
-  //   new Item('abczyx', './assets/images/ao-nam-1.jpg', '1000k', 'male'),
-  //   new Item('abcasd', './assets/images/ao-nam-2.jpg', '1100k', 'male'),
-  //   new Item('name 3', './assets/images/ao-nu-1.jpg', '1200k', 'female'),
-  //   new Item('name 4', './assets/images/ao-nu-2.jpg', '1300k', 'female')
-  // ];
   items: IClothes[];
   carts: IClothes[] = [];
   constructor(private test: TestService, private cartSvc: CartSvService) {}
-  currItems;
+  currItems: any;
   clearSub;
+  num = 0;
   activeClass = 'all';
   ngOnInit() {
     this.getAll();
@@ -35,7 +30,9 @@ export class ShowItemComponent implements OnInit {
   addToCart(item) {
     this.carts.push(item);
     this.cartSvc.add(this.carts);
-    console.log(this.carts);
+    this.num += 1;
+    this.cartSvc.cartNum = this.num;
+    alert('added: ' + item.name);
   }
   getAll() {
     this.activeClass = 'all';
@@ -53,9 +50,12 @@ export class ShowItemComponent implements OnInit {
   }
   search(text: HTMLInputElement) {
     if (text.value !== '') {
-      return (this.currItems = this.items.filter(x =>
-        x.name.includes(text.value)
-      ));
+      return (this.currItems = this.test
+        .getAllProducts()
+        .pipe()
+        .subscribe(
+          rs => (this.currItems = rs.filter(x => x.name.includes(text.value)))
+        ));
     } else {
       return this.getAll();
     }

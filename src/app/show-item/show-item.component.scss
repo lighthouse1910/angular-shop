@@ -22,6 +22,7 @@
     position: relative;
     overflow: hidden;
     transition: 0.3s ease-out;
+    margin: 0;
     &:hover {
       transform: translateY(-10px);
       transition: 0.2s;
@@ -41,6 +42,8 @@
       text-align: center;
       transform: translateY(30px);
       color: #fff;
+      transition: 0.3s ease-out;
+      cursor: pointer;
     }
   }
   p {

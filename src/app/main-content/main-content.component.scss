@@ -1,8 +1,14 @@
 .navigator {
   background-color: cornflowerblue;
-  height: 50px;
-  border: 1px solid #ccc;
+  height: 51px;
+  // border: 1px solid #ccc;
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
+  .cart {
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
 }

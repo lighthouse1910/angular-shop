@@ -4,9 +4,10 @@ import { ShowItemComponent } from './show-item/show-item.component';
   providedIn: 'root'
 })
 export class CartSvService {
-  public arrItem;
+  arrayItems;
+  cartNum = 0;
   constructor() {}
-  public add(arrItem) {
-    this.arrItem = arrItem;
+  add(arrItem) {
+    this.arrayItems = arrItem;
   }
 }

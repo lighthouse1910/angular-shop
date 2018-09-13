@@ -52,7 +52,7 @@ export class FormaddComponent implements OnInit {
     if (this.addForm.valid) {
       this.testSv
         .addNewProduct(this.addForm.value)
-        .subscribe(res => this.router.navigateByUrl('/products'));
+        .subscribe(res => this.router.navigateByUrl(''));
     }
     console.log(value, this.items);
   }
