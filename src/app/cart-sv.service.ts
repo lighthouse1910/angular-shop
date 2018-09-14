@@ -5,7 +5,6 @@ import { ShowItemComponent } from './show-item/show-item.component';
 })
 export class CartSvService {
   arrayItems;
-  cartNum = 0;
   constructor() {}
   add(arrItem) {
     this.arrayItems = arrItem;

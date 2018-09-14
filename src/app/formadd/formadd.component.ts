@@ -19,7 +19,7 @@ import {
 export class FormaddComponent implements OnInit {
   items: IClothes[];
   listImg;
-  category;
+  categories;
   addForm: FormGroup;
 
   constructor(
@@ -30,30 +30,28 @@ export class FormaddComponent implements OnInit {
 
   ngOnInit() {
     this.addForm = this.fb.group({
-      Name: '',
-      Image: '',
-      Price: '',
-      Category: ''
+      name: '',
+      image: '',
+      price: '',
+      category: ''
     });
     this.listImg = [
-      { name: 'ao nam 1', imgUrl: './assets/images/ao-nam-1.jpg' },
-      { name: 'ao nam 2', imgUrl: './assets/images/ao-nam-2.jpg' },
-      { name: 'ao nam 3', imgUrl: './assets/images/ao-nam-3.jpg' },
-      { name: 'ao nam 4', imgUrl: './assets/images/ao-nam-4.jpg' },
-      { name: 'ao nu 1', imgUrl: './assets/images/ao-nu-1.jpg' },
-      { name: 'ao nu 2', imgUrl: './assets/images/ao-nu-2.jpg' },
-      { name: 'ao nu 3', imgUrl: './assets/images/ao-nu-3.jpg' },
-      { name: 'ao nu 4', imgUrl: './assets/images/ao-nu-4.jpg' }
+      { name: 'ao nam 1', imgUrl: '/assets/images/ao-nam-1.jpg' },
+      { name: 'ao nam 2', imgUrl: '/assets/images/ao-nam-2.jpg' },
+      { name: 'ao nam 3', imgUrl: '/assets/images/ao-nam-3.jpg' },
+      { name: 'ao nam 4', imgUrl: '/assets/images/ao-nam-4.jpg' },
+      { name: 'ao nu 1', imgUrl: '/assets/images/ao-nu-1.jpg' },
+      { name: 'ao nu 2', imgUrl: '/assets/images/ao-nu-2.jpg' },
+      { name: 'ao nu 3', imgUrl: '/assets/images/ao-nu-3.jpg' },
+      { name: 'ao nu 4', imgUrl: '/assets/images/ao-nu-4.jpg' }
     ];
-    this.category = ['male', 'female'];
+    this.categories = ['male', 'female'];
   }
   onSubmit() {
-    const value = this.addForm.value;
     if (this.addForm.valid) {
       this.testSv
         .addNewProduct(this.addForm.value)
-        .subscribe(res => this.router.navigateByUrl(''));
+        .subscribe(res => this.router.navigateByUrl('/'));
     }
-    console.log(value, this.items);
   }
 }

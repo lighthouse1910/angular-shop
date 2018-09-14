@@ -22,7 +22,7 @@ export class ShowItemComponent implements OnInit {
   constructor(private test: TestService, private cartSvc: CartSvService) {}
   currItems: any;
   clearSub;
-  num = 0;
+  // num;
   activeClass = 'all';
   ngOnInit() {
     this.getAll();
@@ -30,8 +30,7 @@ export class ShowItemComponent implements OnInit {
   addToCart(item) {
     this.carts.push(item);
     this.cartSvc.add(this.carts);
-    this.num += 1;
-    this.cartSvc.cartNum = this.num;
+    // this.num = this.carts.length;
     alert('added: ' + item.name);
   }
   getAll() {

@@ -5,13 +5,13 @@
         <label for="" class="col-2">
           Name:
         </label>
-        <input type="text" class="form-control col-10" formControlName="Name">
+        <input type="text" class="form-control col-10" formControlName="name">
       </div>
       <div class="form-group row">
         <label for="" class="col-2">
           Image:
         </label>
-        <select name="" id="" class="form-control col-10" formControlName="Image">
+        <select name="" id="" class="form-control col-10" formControlName="image">
           <option [value]="i.imgUrl" *ngFor="let i of listImg">{{i.name}}</option>
         </select>
       </div>
@@ -19,14 +19,14 @@
         <label for="" class="col-2">
           Price:
         </label>
-        <input type="text" class="col-10 form-control" formControlName="Price">
+        <input type="text" class="col-10 form-control" formControlName="price">
       </div>
       <div class="form-group row">
         <label for="" class="col-2">
           Category:
         </label>
-        <select name="" id="" class="form-control col-10" formControlName="Category">
-          <option value="{{c}}" *ngFor="let c of category">{{c}}</option>
+        <select name="" id="" class="form-control col-10" formControlName="category">
+          <option value="{{c}}" *ngFor="let c of categories">{{c}}</option>
         </select>
       </div>
       <div class="form-group row justify-content-md-center">

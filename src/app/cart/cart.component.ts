@@ -10,11 +10,13 @@ import { IClothes } from '../app.model';
 export class CartComponent implements OnInit {
   items: IClothes[];
   total;
+  count;
   constructor(private cartSvc: CartSvService) {}
 
   ngOnInit() {
     this.items = this.cartSvc.arrayItems;
     this.totalPrice();
+    // this.count = this.items.length;
   }
   totalPrice() {
     const priceArr = this.items.map(x => x.price);

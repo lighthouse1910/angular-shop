@@ -1,52 +1,95 @@
 {
   "items": [
     {
+      "id": 1,
       "name": "abc1",
       "image": "/assets/images/ao-nam-1.jpg",
       "price": 100,
       "category": "male"
     },
     {
+      "id": 2,
       "name": "abc2",
       "image": "/assets/images/ao-nam-2.jpg",
       "price": 150,
       "category": "male"
     },
     {
+      "id": 3,
       "name": "abc3",
       "image": "/assets/images/ao-nam-3.jpg",
       "price": 120,
       "category": "male"
     },
     {
+      "id": 4,
       "name": "abc4",
       "image": "/assets/images/ao-nam-4.jpg",
       "price": 1100,
       "category": "male"
     },
     {
+      "id": 5,
       "name": "abcasd1",
       "image": "/assets/images/ao-nu-1.jpg",
       "price": 100,
       "category": "female"
     },
     {
+      "id": 6,
       "name": "abc1123",
       "image": "/assets/images/ao-nu-2.jpg",
       "price": 1010,
       "category": "female"
     },
     {
+      "id": 7,
       "name": "abcasassads1",
       "image": "/assets/images/ao-nu-3.jpg",
       "price": 100,
       "category": "female"
     },
     {
+      "id": 8,
       "name": "aasdbc1",
       "image": "/assets/images/ao-nu-4.jpg",
       "price": 100,
       "category": "female"
+    },
+    {
+      "name": "qweq",
+      "image": "/assets/images/ao-nam-1.jpg",
+      "price": "12",
+      "category": "female",
+      "id": 10
+    },
+    {
+      "name": "binhvnua",
+      "image": "/assets/images/ao-nu-2.jpg",
+      "price": "15",
+      "category": "female",
+      "id": 11
+    },
+    {
+      "name": "mianhacaunhe",
+      "image": "/assets/images/ao-nam-1.jpg",
+      "price": "123",
+      "category": "male",
+      "id": "33e6c4a4-03ba-4d20-9a94-4c8f6c98f1c3"
+    },
+    {
+      "name": "bh",
+      "image": "/assets/images/ao-nam-3.jpg",
+      "price": "456",
+      "category": "male",
+      "id": "531bd174-fad1-4b44-bf8a-b7022134b3ba"
+    },
+    {
+      "name": "t",
+      "image": "/assets/images/ao-nu-2.jpg",
+      "price": "12345",
+      "category": "female",
+      "id": "7ab5d06a-2d43-4929-8433-727630365d21"
     }
   ]
 }
