@@ -1,11 +1,1 @@
-import { browser, by, element } from 'protractor';
-
-export class AppPage {
-  navigateTo() {
-    return browser.get('/');
-  }
-
-  getParagraphText() {
-    return element(by.css('app-root h1')).getText();
-  }
-}
+../../.git/annex/objects/gW/8Z/SHA256E-s219--6926ff52a0c086ce0ec24e6ca4aaa0f19debb3d03f68de39d26a1fad76152559.po.ts/SHA256E-s219--6926ff52a0c086ce0ec24e6ca4aaa0f19debb3d03f68de39d26a1fad76152559.po.ts

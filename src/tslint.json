@@ -1,17 +1,1 @@
-{
-    "extends": "../tslint.json",
-    "rules": {
-        "directive-selector": [
-            true,
-            "attribute",
-            "app",
-            "camelCase"
-        ],
-        "component-selector": [
-            true,
-            "element",
-            "app",
-            "kebab-case"
-        ]
-    }
-}
+../.git/annex/objects/pM/4M/SHA256E-s331--236a2f5cb3cf1a7419170f3d061322403c83098ec972255a84af62ce4aa4dab2.json/SHA256E-s331--236a2f5cb3cf1a7419170f3d061322403c83098ec972255a84af62ce4aa4dab2.json

@@ -1,12 +1,1 @@
-import { Injectable } from '@angular/core';
-import { ShowItemComponent } from './show-item/show-item.component';
-@Injectable({
-  providedIn: 'root'
-})
-export class CartSvService {
-  arrayItems;
-  constructor() {}
-  add(arrItem) {
-    this.arrayItems = arrItem;
-  }
-}
+../../.git/annex/objects/kJ/qJ/SHA256E-s279--9cfbe506136c923e2a699c722d3d6cef918e88d9843e5eb5985b294d9b68bf34.ts/SHA256E-s279--9cfbe506136c923e2a699c722d3d6cef918e88d9843e5eb5985b294d9b68bf34.ts

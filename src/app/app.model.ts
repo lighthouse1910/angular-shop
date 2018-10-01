@@ -1,7 +1,1 @@
-export interface IClothes {
-  id: number;
-  name: string;
-  image: string;
-  price: number;
-  category: string;
-}
+../../.git/annex/objects/Mj/WG/SHA256E-s121--a07078797e06dd5f42e20f23cb86c4683d97ace226eda9494a8fadc021572f27.ts/SHA256E-s121--a07078797e06dd5f42e20f23cb86c4683d97ace226eda9494a8fadc021572f27.ts

@@ -1,13 +1,1 @@
-# Editor configuration, see http://editorconfig.org
-root = true
-
-[*]
-charset = utf-8
-indent_style = space
-indent_size = 2
-insert_final_newline = true
-trim_trailing_whitespace = true
-
-[*.md]
-max_line_length = off
-trim_trailing_whitespace = false
+.git/annex/objects/jM/K7/SHA256E-s258--0dde3c334282b74376c8ab6ee97e9c3adf2edbcc5805df4ceb60e00a04a3dabd/SHA256E-s258--0dde3c334282b74376c8ab6ee97e9c3adf2edbcc5805df4ceb60e00a04a3dabd

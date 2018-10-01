@@ -1,12 +1,1 @@
-export class Item {
-  name: string;
-  image: string;
-  price: string;
-  category: string;
-  constructor(name: string, image: string, price: string, category: string) {
-    this.name = name;
-    this.image = image;
-    this.price = price;
-    this.category = category;
-  }
-}
+../../../.git/annex/objects/59/4k/SHA256E-s286--5f58d3db5c55e230bb0574ca2c691f9b68cdaccbc119279db45e6836579e2317.ts/SHA256E-s286--5f58d3db5c55e230bb0574ca2c691f9b68cdaccbc119279db45e6836579e2317.ts

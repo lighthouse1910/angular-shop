@@ -1,15 +1,1 @@
-import { Component } from '@angular/core';
-
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
-})
-export class AppComponent {
-  title = 'angularShop';
-  sidenav = true;
-  toggle_sidenav() {
-    this.sidenav = !this.sidenav;
-  }
-  constructor() {}
-}
+../../.git/annex/objects/vf/vW/SHA256E-s327--6a91a1521b04ad882595baf4f3fa3241158225210884f1430f2ce3a06edbcf8c.ts/SHA256E-s327--6a91a1521b04ad882595baf4f3fa3241158225210884f1430f2ce3a06edbcf8c.ts
